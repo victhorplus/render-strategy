@@ -7,16 +7,16 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-const CSR_DIST = join(__dirname, '..', 'CSR-angular', 'dist', 'CSR-angular', 'browser');
+const csr_react_dist = join(__dirname, '..', 'csr-angular', 'dist', 'csr-angular', 'browser');
 
 app.get('/', (req, res) => {
   res.sendFile(join(__dirname, 'index.html'));
 });
 
-app.use('/csr-angular', express.static(CSR_DIST));
+app.use('/csr-angular', express.static(csr_react_dist));
 
 app.get('/csr-angular/*path', (req, res) => {
-  res.sendFile(join(CSR_DIST, 'index.html'));
+  res.sendFile(join(csr_react_dist, 'index.html'));
 });
 
 app.listen(PORT, () => {

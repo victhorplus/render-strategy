@@ -6,7 +6,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "CSR-angular": {
+    "csr-angular": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -57,10 +57,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "CSR-angular:build:production"
+              "buildTarget": "csr-angular:build:production"
             },
             "development": {
-              "buildTarget": "CSR-angular:build:development"
+              "buildTarget": "csr-angular:build:development"
             }
           },
           "defaultConfiguration": "development"
