@@ -1,0 +1,12 @@
+<div class="character-grid">
+  @for (character of characters(); track character.id) {
+    <app-card
+      [id]="character.id"
+      [name]="character.name"
+      [status]="$any(character.status)"
+      [species]="character.species"
+      [image]="character.image"
+      [location]="character.location"
+    />
+  }
+</div>

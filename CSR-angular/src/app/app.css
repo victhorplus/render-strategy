@@ -1,0 +1,24 @@
+.nav {
+  display: flex;
+  gap: 4px;
+  padding: 12px 24px;
+  background-color: #202329;
+}
+
+.nav__link {
+  padding: 8px 20px;
+  border-radius: 4px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: background-color 0.2s;
+}
+
+.nav__link:hover {
+  background-color: #3c3e44;
+}
+
+.nav__link--active {
+  background-color: #3c3e44;
+}

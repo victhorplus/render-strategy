@@ -1,0 +1,17 @@
+<article class="card">
+  <img class="card__image" [src]="image()" [alt]="name()" />
+
+  <div class="card__content">
+    <h2 class="card__name">{{ name() }}</h2>
+
+    <p class="card__status">
+      <span class="card__status-dot" [ngClass]="status() === 'Alive' ? 'card__status-dot--alive' : 'card__status-dot--dead'"></span>
+      {{ status() }} - {{ species() }}
+    </p>
+
+    <div class="card__info">
+      <span class="card__label">Last known location:</span>
+      <span class="card__value">{{ location().name }}</span>
+    </div>
+  </div>
+</article>

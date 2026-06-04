@@ -1,0 +1,8 @@
+.character-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  gap: 16px;
+  padding: 24px;
+  background-color: #272b33;
+  min-height: 100vh;
+}
